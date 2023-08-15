@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include motoka_app *.css
+recursive-include motoka_app *.csv
+recursive-include motoka_app *.html
+recursive-include motoka_app *.ico
+recursive-include motoka_app *.js
+recursive-include motoka_app *.json
+recursive-include motoka_app *.md
+recursive-include motoka_app *.png
+recursive-include motoka_app *.py
+recursive-include motoka_app *.svg
+recursive-include motoka_app *.txt
+recursive-exclude motoka_app *.pyc
