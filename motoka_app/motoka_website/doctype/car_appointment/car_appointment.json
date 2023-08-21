@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "APP-{MM}-{car_name}-{customer_name}",
+ "creation": "2023-08-17 01:25:43.797073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "car_name",
+  "customer_name",
+  "customer_phone_number",
+  "date",
+  "time",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "car_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Car Name",
+   "options": "Car",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_phone_number",
+   "fieldtype": "Int",
+   "label": "Customer Phone Number",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Car Appointment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "custom": 1,
+   "link_doctype": "Car",
+   "link_fieldname": "car_name"
+  }
+ ],
+ "modified": "2023-08-19 02:54:32.585530",
+ "modified_by": "Administrator",
+ "module": "Motoka Website",
+ "name": "Car Appointment",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

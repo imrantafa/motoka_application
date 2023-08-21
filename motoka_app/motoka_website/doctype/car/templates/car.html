@@ -1,0 +1,10 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<p>{{ doc.car_name }}</p>
+<p>{{ doc.car_year }}</p>
+<a href="/car-appointment-booking-page?new=1&car_name={{ doc.car_name }}" target="_blank" class="btn btn-info">Book Now</a>
+{% endblock %}
+
+<!-- this is a sample default web page template -->
